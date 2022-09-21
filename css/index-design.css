@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: FiraSans-Regular;
+	font-weight: normal;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, p, a{
+	color: #424242;
+	margin: 0;
+	padding: 0;
+	background: whitesmoke;
+}
+
+::selection{
+	background: #424242;
+	color: whitesmoke;
+}
+
+::-moz-selection{
+	background: #424242;
+	color: whitesmoke;
+}
+
+#translate{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+input[type="text"]:focus{
+	animation: textFocus .5s;
+	outline: 0;
+}
+
+#main{
+	margin: 20px;
+	font-weight: bold;
+}
+
+form h2{
+	font-family: FiraSans-Bold;
+}
+
+form ul li h5{
+	font-size: 30px;
+	font-family: FiraSans-Bold;
+}
+
+form ul li label{
+	font-size: 20px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+form input[type="text"]{
+	transition: all .35s;
+	padding: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-family: FiraSans-Bold;
+	color: #DA4336;
+}
+
+form button[type="submit"]{
+	background: #424242;
+	border: solid 4px #424242;
+	color: whitesmoke;
+	padding: 7px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all .35s;
+}
+
+form button[type="submit"]:hover{
+	background: whitesmoke;
+	color: #424242;
+}
+
+form button[type="submit"]:focus{
+	background: whitesmoke;
+	color: #424242;
+}
+
+#load-proj-toggle{
+	position: absolute;
+	right: 10px;
+	bottom: 0;
+	background: whitesmoke;
+	border: none;
+	text-decoration: underline;
+	opacity: 0.9;
+	font-family: FiraSans-Bold;
+	cursor: pointer;
+	transition: all .35s;
+}
+
+#load-proj-toggle span{
+	transition: all .35s;
+	transform: rotate(0);
+}
+
+.load-proj-span-close{
+	transform: rotate(45deg) !important;
+}
+
+#load-proj-toggle:hover{
+	opacity: 1;
+}
+
+#load-proj-toggle:focus{
+	outline: 0;
+}
+
+#load-proj{
+	position: fixed;
+	bottom: 10px;
+	width: 20%;
+}
+
+#load-proj input[type="text"]{
+	width: 100%;
+	margin-top: 10px;
+	padding: 5px;
+}
+
+#load-proj input[type="text"]:focus{
+	animation: textFocus .5s;
+}
+
+#load-proj #load-proj-btn{
+	background: #424242;
+	border: solid 4px #424242;
+	color: whitesmoke;
+	padding: 7px;
+	border-radius: 3px;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 3px;
+	transition: all .35s;
+}
+
+#load-proj #load-proj-btn:hover{
+	background: whitesmoke;
+	color: #424242;
+}
+
+@keyframes textFocus{
+	from{
+		transform: rotate(0);
+	} 50%{
+		transform: rotate(-6deg);
+	} to{
+		transform: rotate(0);
+	}
+}
+
+@font-face{
+	font-family: FiraSans-Regular;
+	src: url('../fonts/FiraSans-Regular.ttf');
+}
+
+@font-face{
+	font-family: FiraSans-Bold;
+	src: url('../fonts/FiraSans-Bold.ttf');
+}
+
+@font-face{
+	font-family: FiraSans-Italic;
+	src: url('../fonts/FiraSans-Italic.ttf');
+}

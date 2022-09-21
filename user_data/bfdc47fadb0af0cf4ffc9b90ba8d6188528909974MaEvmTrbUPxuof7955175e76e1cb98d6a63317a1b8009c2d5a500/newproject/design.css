@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+}
+
+/*Theme-start*/
+body{
+	background: #F2EEB3;
+	padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, button{
+	color: #59323C;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-weight: bold;
+}
+/*Theme-end*/
+
+/*Main-start*/
+body{
+	overflow-wrap: break-word;
+  	word-wrap: break-word;
+  	-ms-word-break: break-all;
+    word-break: break-all;
+  	word-break: break-word;
+  	-ms-hyphens: auto;
+  	-moz-hyphens: auto;
+  	-webkit-hyphens: auto;
+  	hyphens: auto;
+}
+
+body{
+    background: red;
+}
+
+._1{
+    color: red;
+    background: white;
+    font-size: 50px;
+}
+
+body{
+    color: black;
+}
+/*Main-end*/
